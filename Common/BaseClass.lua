@@ -109,7 +109,7 @@ function Singleton(classname,...)
     return class_type
 end
 
-function BaseClass(classname,..)
+function BaseClass(classname,...)
     for i=1,select("#",...) do
         assert(select(i,...),"Singleton "..classname.." create while super has nil table!")
     end
