@@ -1,4 +1,5 @@
-LoginWnd = BaseClass("LoginWnd","BaseWindow")
+local BaseWindow = require("UI.BaseWindow")
+local LoginWnd = BaseClass("LoginWnd",BaseWindow)
 
 function LoginWnd:__init( )
     -- body

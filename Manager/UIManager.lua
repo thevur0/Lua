@@ -6,8 +6,8 @@ function UIManager:__init()
 end
 
 function UIManager:OpenWnd(wnd)
-    local wnd = require("UI.LoginWnd")
-    wnd:__init()
+    local LoginWnd = require("UI.LoginWnd")
+    local wnd = LoginWnd.new()
     wnd:Print()
 end
 return UIManager

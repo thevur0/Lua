@@ -1,4 +1,6 @@
-BaseView = BaseClass("BaseView","BaseControl")
+
+local BaseControl = require("UI.BaseControl")
+local BaseView = BaseClass("BaseView",BaseControl)
 
 
 function BaseView:__init( )
